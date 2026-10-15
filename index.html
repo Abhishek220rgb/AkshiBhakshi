@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akshi Bhakshi 💀</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0b12;
+  color: white;
+  text-align: center;
+}
+
+.screen {
+  min-height: 100vh;
+  padding: 35px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: #ff3c79;
+  font-size: clamp(36px, 9vw, 60px);
+  margin: 12px 0;
+}
+
+h2 { color: #ffd166; }
+
+p { line-height: 1.7; }
+
+button {
+  background: #ff3c79;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 16px 35px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:active { transform: scale(0.96); }
+
+#main { display: none; }
+
+.tag {
+  background: #20202d;
+  padding: 12px;
+  border-radius: 12px;
+  margin: 7px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.photo {
+  background: #20202d;
+  border: 1px solid #444;
+  border-radius: 14px;
+  padding: 8px;
+  overflow: hidden;
+}
+
+.photo img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 9px;
+}
+
+.caption {
+  color: #ffd166;
+  font-weight: bold;
+  padding: 8px 2px;
+}
+
+footer {
+  color: #aaa;
+  font-size: 12px;
+  margin-top: 35px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- WELCOME SCREEN -->
+<section class="screen" id="welcome">
+  <div style="font-size:65px;">🚨💀🚨</div>
+  <p>CONFIDENTIAL FILE #001</p>
+  <h1>AKSHI BHAKSHI</h1>
+  <h2>The Legend. The Calls. The Commentary.</h2>
+
+  <p>
+    Welcome to the official investigation bureau.<br>
+    A special case has been opened regarding<br>
+    suspiciously long phone calls. 📞
+  </p>
+
+  <p><b>WARNING:</b> Proceed at your own risk.</p>
+
+  <button onclick="enterSite()">ENTER AT YOUR OWN RISK 😂</button>
+</section>
+
+<!-- ROAST WEBSITE -->
+<section class="screen" id="main">
+  <div style="font-size:55px;">📞🕵️‍♂️</div>
+  <h1>AKSHI BHAKSHI</h1>
+  <h2>OFFICIAL LEGEND PROFILE</h2>
+
+  <div class="tag">
+    🎓 <b>Education:</b><br>
+    Diploma 3rd Year — E&TC<br>
+    Polytechnic, Akkalkot
+  </div>
+
+  <div class="tag">
+    📱 <b>Known Hobby:</b><br>
+    Calling friends for absolutely
+    essential discussions about other people 💀
+  </div>
+
+  <div class="tag">
+    🏆 <b>Special Skill:</b><br>
+    Turning “Bro, listen to this” into a
+    full-length documentary.
+  </div>
+
+  <h2>📸 THE AKSHI ARCHIVES</h2>
+  <p>Add his photos to the website folder to fill this gallery!</p>
+
+  <div class="gallery">
+
+    <div class="photo">
+      <img src="akshi1.jpg" alt="Akshi photo 1">
+      <div class="caption">
+        CEO of "Bro, you know what happened?"
+      </div>
+    </div>
+
+    <div class="photo">
+      <img src="akshi2.jpg" alt="Akshi photo 2">
+      <div class="caption">
+        Phone battery: 2%. Conversation: 3 hours.
+      </div>
+    </div>
+
+    <div class="photo">
+      <img src="akshi3.jpg" alt="Akshi photo 3">
+      <div class="caption">
+        E&TC student by day, commentary expert by night.
+      </div>
+    </div>
+
+    <div class="photo">
+      <img src="akshi4.jpg" alt="Akshi photo 4">
+      <div class="caption">
+        "I'm not gossiping, bro. I'm sharing information." 😭
+      </div>
+    </div>
+
+  </div>
+
+  <h2>🏆 HIS SPECIAL AWARDS</h2>
+
+  <div class="tag">🥇 Lifetime Achievement in Phone Calls</div>
+  <div class="tag">🎙️ Best Supporting Friend in Every Conversation</div>
+  <div class="tag">📡 Most Active Communication Network</div>
+  <div class="tag">🔋 Highest Phone Usage in the Friend Circle</div>
+
+  <h2>📢 FINAL REPORT</h2>
+  <p>
+    Case status: STILL TALKING. 😂<br>
+    Battery status: UNKNOWN.<br>
+    Call status: "Bro, one last thing..."
+  </p>
+
+  <button onclick="alert('Akshi Bhakshi has been officially exposed. Case closed. 💀')">
+    CLOSE THE CASE 🔒
+  </button>
+
+  <footer>
+    Made with friendship, memes & questionable amounts of free time ❤️<br>
+    This website is for entertainment purposes only.
+  </footer>
+</section>
+
+<script>
+function enterSite() {
+  document.getElementById("welcome").style.display = "none";
+  document.getElementById("main").style.display = "flex";
+  window.scrollTo(0, 0);
+}
+</script>
+
+</body>
+</html>
