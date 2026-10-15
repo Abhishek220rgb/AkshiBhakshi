@@ -185,6 +185,32 @@ footer {
   <div class="tag">📡 Most Active Communication Network</div>
   <div class="tag">🔋 Highest Phone Usage in the Friend Circle</div>
 
+<h2>📞 INCOMING CALL</h2>
+<div class="tag">
+  <div style="font-size:55px;">📱</div>
+  <h2>AKSHI BHAKSHI</h2>
+  <p>Incoming call... probably has some new information 💀</p>
+
+  <button onclick="answerCall()">📞 Answer</button>
+  <button onclick="rejectCall()" style="background:#555;">
+    ❌ Reject
+  </button>
+
+  <p id="callMessage"></p>
+</div>
+
+<script>
+function answerCall() {
+  document.getElementById("callMessage").innerHTML =
+    "🗣️ 'BROOO, LISTEN TO WHAT HAPPENED TODAY...' 😂📢";
+}
+
+function rejectCall() {
+  document.getElementById("callMessage").innerHTML =
+    "💀 You rejected the call. Akshi is now calling the entire friend circle.";
+}
+</script>
+  
   <h2>📢 FINAL REPORT</h2>
   <p>
     Case status: STILL TALKING. 😂<br>
